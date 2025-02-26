@@ -1,4 +1,4 @@
-package top.bobfox.lockthescreen
+package top.bobfox.lockscreen
 
 import android.app.Activity
 import android.content.Intent
