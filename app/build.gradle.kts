@@ -10,7 +10,6 @@ android {
     defaultConfig {
         applicationId = "top.bobfox.lockscreen"
         minSdk = 35
-        //noinspection ExpiredTargetSdkVersion
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
@@ -18,7 +17,6 @@ android {
 
     buildTypes {
         release {
-//            isMinifyEnabled = false
             isMinifyEnabled = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
@@ -36,8 +34,4 @@ android {
 }
 
 dependencies {
-
-//    implementation(libs.androidx.core.ktx)
-//    implementation(libs.androidx.appcompat)
-//    implementation(libs.material)
 }

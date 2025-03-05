@@ -9,7 +9,9 @@ class LockScreenAccessibilityService : AccessibilityService() {
         if (intent != null)
             performGlobalAction(GLOBAL_ACTION_LOCK_SCREEN)
 
-        return START_STICKY
+        stopSelf()
+
+        return START_NOT_STICKY
     }
 
     override fun onAccessibilityEvent(event: AccessibilityEvent?) { }
